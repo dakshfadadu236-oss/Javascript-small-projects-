@@ -88,7 +88,7 @@ const completeTask = () => {
     const index = Number(num) - 1;
 
     if (!tasks[index]) {
-      console.log("❌ Invalid task number");
+      console.log(" Invalid task number");
     } else {
       tasks[index].completed = true;
       saveTasks(tasks);
@@ -110,7 +110,7 @@ const deleteTask = () => {
     } else {
       tasks.splice(index, 1);
       saveTasks(tasks);
-      console.log("🗑️ Task deleted");
+      console.log(" Task deleted");
     }
 
     console.log("Actions:", actionCounter());
@@ -154,10 +154,10 @@ const handleInput = (choice) => {
     case "4": return deleteTask();
     case "5": return showStats();
     case "6":
-      console.log("👋 Goodbye FD!");
+      console.log("Goodbye FD!");
       return rl.close();
     default:
-      console.log("❌ Invalid choice");
+      console.log(" Invalid choice");
       return menu();
   }
 };
