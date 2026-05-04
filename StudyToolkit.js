@@ -4,7 +4,7 @@ let arr = [];
 
 function showMenu() {
   return prompt(
-    "📌 JavaScript Toolkit Menu\n\n" +
+    "JavaScript Toolkit Menu\n\n" +
     "1. Add Number\n" +
     "2. Show Array\n" +
     "3. Sum of Array\n" +
